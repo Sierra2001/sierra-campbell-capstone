@@ -1,33 +1,78 @@
 # sierra-campbell-capstone
 
-Capstone Project
-What is your app? Give a brief description in a couple of sentences.
+Fitness Finder (working title)
 
-### Problem Space
+## Overview
 
-Why is your app needed? Give any background information around any pain points or other reasons.
+Fitness Finder is a tool for fitness enthusiasts to find different workouts and discover nearby gyms.
+
+### Problem
+
+Imagine this: You're away from your local gym and want an easy way to find a place nearby. Once you get there, you’re wondering what workouts you want to do. Instead of searching multiple websites, Fitness Finder helps you quickly locate a gym and find workouts based on your fitness goals.
 
 ### User Profile
 
-Who will use your app? How will they use it? Add any special considerations that your app must take into account.
+- People in the fitness community:
+
+1. It helps you find a gym nearby using Google Places APIs
+2. It provides workouts by type (strength, cardio, flexibility) so you can jump right into a routine.
+3. It eliminates the need for multiple searches and saves time.
 
 ### Features
 
-List the functionality that your app will include. These can be written as user stories or descriptions with related details. Do not describe _how_ these features are implemented, only _what_ needs to be implemented.
+Find a Workout
+
+- Search by type: strength, cardio, flexibility
+  Storing the workout data in a JSON file (or a database?) this will allow users to filter workouts by type.
+  The three types focused on are: (Strength, Cardio, Flexibility).
+  ex. { "id": 1, "name": "Push-ups", "type": "Strength" }
+
+Find a Gym
+
+- Uses the Google Places API (Nearby Search) to find gyms. This will show gyms near a user’s location
 
 ## Implementation
 
 ### Tech Stack
 
-List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
+Front-End:
+
+- React – for building the user interface.
+- Axios - for handeling the api request to get the nearby gym and workout data
+
+Back-End:
+
+- Node.js - this will be used to create the backend server
+- Express.js - To handle the routing requests
+
+Databases:
+
+- for now i dont think ill be using this since my workout data will be in a json file & im using the google api to get the gyms
 
 ### APIs
 
+Google Places API - Nearby Search
+https://maps.googleapis.com/maps/api/place/nearbysearch/json
+?keyword=cruise
+&location=-33.8670522%2C151.1957362
+&radius=1500
+&type=restaurant
+&key=YOUR_API_KEY
 List any external sources of data that will be used in your app.
 
 ### Sitemap
 
-List the pages of your app with brief descriptions. You can show this visually, or write it out.
+GOING TO SHOW VISUALLY
+
+- Going to use Figma to design it
+
+Home Page
+
+- 1 page - find a gym (using api)
+- 2 page - find a workout
+  - Strength
+  - Cardio
+  - Flexibility
 
 ### Mockups
 

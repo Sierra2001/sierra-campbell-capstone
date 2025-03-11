@@ -1,5 +1,6 @@
 # sierra-campbell-capstone
 
+-implementing crud operations, comment section, pixabay?
 Fitness Finder (working title)
 
 ## Overview
@@ -25,7 +26,8 @@ Find a Workout
 - Search by type: strength, cardio, flexibility
   Storing the workout data in a JSON file (or a database?) this will allow users to filter workouts by type.
   The three types focused on are: (Strength, Cardio, Flexibility).
-  ex. { "id": 1, "name": "Push-ups", "type": "Strength" }
+  ex.
+  (muscle group filtering, json set)
 
 Find a Gym
 
@@ -76,11 +78,39 @@ Home Page
 
 ### Mockups
 
-Provide visuals of your app's screens. You can use pictures of hand-drawn sketches, or wireframing tools like Figma.
+I made sketches on my iPad
 
 ### Data
 
-Describe your data and the relationships between the data points. You can show this visually using diagrams, or write it out.
+Workouts
+Each workout will be stored in a database with the following fields:
+
+id (Unique identifier for each workout)
+name (Workout name, e.g., "Push-Up Routine")
+type (Category: Strength, Cardio, Flexibility)
+description (Short explanation of the workout)
+muscleGroups (Optional: Specifies targeted muscle groups, e.g., "Chest, Triceps")
+imageUrl (Links to an image, possibly from Pixabay or Unsplash)
+
+Workout (One)
+-- id: 1
+-- name: "HIIT Sprint Workout"
+-- type: "Cardio"
+-- description: "A quick high-intensity sprint routine."
+-- duration: "15 minutes"
+├── comments:
+-- id: 101
+-- workoutId: 1
+-- text: "This was a killer workout!"
+-- timestamp: "2025-03-10 14:30:00"
+
+Comments
+Users can leave comments on workouts. Comments will have the following fields:
+
+id (Unique identifier for each comment)
+workoutId (Foreign key linking to a specific workout)
+text (The comment itself, e.g., "Great workout!")
+timestamp (Time when the comment was posted)
 
 ### Endpoints
 

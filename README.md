@@ -66,19 +66,18 @@ List any external sources of data that will be used in your app.
 
 GOING TO SHOW VISUALLY
 
-- Going to use Figma to design it
-
 Home Page
+buttons to find a gym (using api) and find a workout
 
-- 1 page - find a gym (using api)
-- 2 page - find a workout
-  - Strength
-  - Cardio
-  - Flexibility
+Find Workout page:
+
+- Strength -- Workout Section -- Workout Detail Page
+- Cardio -- Workout Section -- Workout Detail Page
+- Flexibility -- Workout Section -- Workout Detail Page
 
 ### Mockups
 
-I made sketches on my iPad
+Please see the zip file. Created on Canva, a rough mockup on the pages of my website.
 
 ### Data
 

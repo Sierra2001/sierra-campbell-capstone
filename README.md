@@ -64,16 +64,15 @@ List any external sources of data that will be used in your app.
 
 ### Sitemap
 
-GOING TO SHOW VISUALLY
-
 Home Page
-buttons to find a gym (using api) and find a workout
 
-Find Workout page:
+- NavBar
+- Buttons to find a gym (using API) and find a workout.
 
-- Strength -- Workout Section -- Workout Detail Page
-- Cardio -- Workout Section -- Workout Detail Page
-- Flexibility -- Workout Section -- Workout Detail Page
+Find Workout Page
+Strength → (links to another page) Workout Section → (links to another page) Workout Detail Page
+Cardio _Same as above_
+Flexibility _Same as Above_
 
 ### Mockups
 
@@ -113,14 +112,29 @@ timestamp (Time when the comment was posted)
 
 ### Endpoints
 
-List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+Workouts
+GET /workouts – Retrieve all workouts
+GET /workouts/:id – Retrieve a specific workout by ID
+
+Comments
+POST /workouts/:id/comments – Add a comment to a workout
+DELETE /comments/:id – Delete a comment
 
 ## Roadmap
 
-Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation working back from the capstone due date.
+March 10th, 2025: set up READ.ME and mockups
+March 11, 2025: set up React frontend
+March 12, 2025: set up backend (Node.js, Express)
+March 14, 2025: create database for workouts
+March 18, 2025: implement Google Places API
+March 21, 2025: implement workout filtering
+March 24, 2025: implement comment section
+March 27, 2025: testing
 
 ---
 
 ## Future Implementations
 
-Your project will be marked based on what you committed to in the above document. Here, you can list any additional features you may complete after the MVP of your application is built, or if you have extra time before the Capstone due date.
+User Authentication: Allow users to create accounts and save favorite workouts.
+Workout Logging: Track completed workouts.
+Gym Reviews: Users can leave reviews for gyms.

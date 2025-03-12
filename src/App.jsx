@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      HELLO
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/workouts" element={<Workouts />} />

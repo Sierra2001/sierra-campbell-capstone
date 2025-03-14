@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Workouts from "./pages/Workouts/Workouts";
 import WorkoutDetails from "./pages/WorkoutDetails/WorkoutDetails";
 import Gyms from "./pages/Gyms/Gyms";
+import "./styles/global.scss";
 
 function App() {
   return (

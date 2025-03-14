@@ -89,6 +89,7 @@ type (Category: Strength, Cardio, Flexibility)
 description (Short explanation of the workout)
 muscleGroups (Optional: Specifies targeted muscle groups, e.g., "Chest, Triceps")
 imageUrl (Links to an image, possibly from Pixabay or Unsplash)
+-find images and have it render in public, grab and name your workout 
 
 Workout (One)
 -- id: 1

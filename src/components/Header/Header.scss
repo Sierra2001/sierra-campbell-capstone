@@ -1,11 +1,17 @@
-nav {
+.header {
   display: flex;
   align-items: center;
-  justify-content: space-between; // Ensures equal spacing
-  padding: 1rem 1.5rem; // Smaller padding for mobile
+  justify-content: space-evenly;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
 
-  .smallLogo,
+  .smallLogo {
+    width: 5rem;
+  }
+
   .logo {
     width: 8rem;
     height: auto;
@@ -13,8 +19,42 @@ nav {
 
   .menu-icon {
     width: 3rem;
-    height: auto;
     cursor: pointer;
-    margin-left: auto; // Pushes it to the right
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 10;
+    gap: 1rem;
+  }
+
+  .dropdown-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 0.5rem;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
   }
 }

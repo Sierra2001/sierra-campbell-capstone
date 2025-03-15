@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .header {
   display: flex;
   align-items: center;
@@ -41,17 +43,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     transition: 0.3s;
     padding: 0.5rem;
+    font-family: "Bebas Neue", sans-serif;
 
     &:hover {
       background: rgba(255, 255, 255, 0.4);

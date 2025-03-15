@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlinkerBold";
+  src: url("../../assets/fonts/Blinker-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "BlinkerRegular";
+  src: url("../../assets/fonts/Blinker-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "BebasNeue", sans-serif;
+}
+
+h1 {
+  font-family: "BlinkerBold", sans-serif;
+}
+
+p {
+  font-family: "BlinkerRegular", sans-serif;
+}

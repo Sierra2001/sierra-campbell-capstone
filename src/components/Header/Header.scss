@@ -22,11 +22,15 @@
   .menu-icon {
     width: 3rem;
     cursor: pointer;
+
+    &:hover {
+      background: rgba(209, 122, 122, 0.4);
+    }
   }
 
   .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 0;
     width: 100%;
     background: rgba(30, 30, 30, 0.7);
@@ -34,7 +38,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 3rem 0;
     z-index: 10;
     gap: 1rem;
   }
@@ -56,7 +60,7 @@
     font-family: "Bebas Neue", sans-serif;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(209, 122, 122, 0.4);
     }
   }
 }

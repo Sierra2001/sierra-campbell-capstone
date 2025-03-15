@@ -8,7 +8,12 @@ function Home() {
       <video autoPlay loop muted playsInline className="background-video">
         <source src={fitnessVideo} type="video/mp4" />
       </video>
-      <div className="content"></div>
+      <div className="content">
+        <h1 className="brand-text">
+          Wherever you <span className="highlight">go</span>, <br />
+          your workout can <span className="highlight">too</span>.
+        </h1>
+      </div>
     </div>
   );
 }

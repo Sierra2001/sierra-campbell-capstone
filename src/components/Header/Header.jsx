@@ -1,12 +1,24 @@
 import { Link } from "react-router-dom";
-import "./Header.scss"; // ✅ Use relative path
+import logo from "../../assets/Icons/Fitness Finder (Instagram Post (45)).png";
+import smallLogo from "../../assets/Icons/FF.png";
+import menuBar from "../../assets/Icons/MenuBar.png";
+import "./Header.scss";
 
 function Header() {
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/workouts">Find a Workout</Link>
-      <Link to="/gyms">Find a Gym</Link>
+      {/* Small Logo */}
+      <img
+        src={smallLogo}
+        alt="Small Fitness Finder Logo"
+        className="smallLogo"
+      />
+
+      {/* Main Logo */}
+      <img src={logo} alt="Fitness Finder Logo" className="logo" />
+
+      {/* Menu Bar Icon */}
+      <img src={menuBar} alt="Menu" className="menu-icon" />
     </nav>
   );
 }

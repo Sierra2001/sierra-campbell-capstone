@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>© {new Date().getFullYear()} Fitness Finder. All rights reserved.</p>
+      {/* <p>© {new Date().getFullYear()} Fitness Finder. All rights reserved.</p> */}
     </footer>
   );
 }

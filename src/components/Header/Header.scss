@@ -1,0 +1,20 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Ensures equal spacing
+  padding: 1rem 1.5rem; // Smaller padding for mobile
+  width: 100%;
+
+  .smallLogo,
+  .logo {
+    width: 8rem;
+    height: auto;
+  }
+
+  .menu-icon {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+    margin-left: auto; // Pushes it to the right
+  }
+}

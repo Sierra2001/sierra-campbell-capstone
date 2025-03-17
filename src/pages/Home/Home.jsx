@@ -1,6 +1,7 @@
 import React from "react";
-import fitnessVideo from "../../assets/FitnessVideo.mp4"; // Import the video
-import "./Home.scss"; // Import styles
+import { Link } from "react-router-dom"; 
+import fitnessVideo from "../../assets/FitnessVideo.mp4"; 
+import "./Home.scss"; 
 
 function Home() {
   return (
@@ -13,6 +14,16 @@ function Home() {
           Wherever you <span className="highlight">go</span>, <br />
           your workout can <span className="highlight">too</span>.
         </h1>
+
+        {/* Buttons */}
+        <div className="buttons-container">
+          <Link to="/find-gym" className="button">
+            Find a Gym
+          </Link>
+          <Link to="/find-workout" className="button">
+            Find a Workout
+          </Link>
+        </div>
       </div>
     </div>
   );

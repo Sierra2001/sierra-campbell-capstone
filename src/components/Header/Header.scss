@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 20px;
   position: relative;
   box-sizing: border-box;
 
@@ -49,18 +49,21 @@
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: transparent;
     color: white;
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
-    transition: 0.3s;
-    padding: 0.5rem;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+    padding: 0.3rem;
 
     &:hover {
-      background: rgba(209, 122, 122, 0.4);
+      background: rgba(131, 37, 37, 0.3);
+      border-color: rgb(131, 37, 37);
     }
   }
 }

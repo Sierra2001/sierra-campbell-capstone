@@ -1,8 +1,7 @@
-html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; // Prevents horizontal scrolling
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
@@ -18,7 +17,7 @@ body {
     width: 100vw;
     height: 150vh;
     object-fit: cover;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(15%);
     z-index: -1;
   }
 
@@ -39,4 +38,35 @@ body {
 .second-line {
   display: block;
   margin-top: 1rem;
+}
+
+.highlight {
+  color: rgb(131, 37, 37); /* Apply the color to the specific words */
+}
+
+/* Style for the buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 9rem;
+}
+
+.button {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+
+  &:hover {
+    background: rgba(131, 37, 37, 0.3);
+    border-color: rgb(131, 37, 37);
+  }
 }

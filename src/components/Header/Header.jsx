@@ -15,11 +15,13 @@ function Header() {
   return (
     <nav className="header">
       {/* Small Logo */}
-      <img
-        src={smallLogo}
-        alt="Small Fitness Finder Logo"
-        className="smallLogo"
-      />
+      <Link to="/">
+        <img
+          src={smallLogo}
+          alt="Small Fitness Finder Logo"
+          className="smallLogo"
+        />
+      </Link>
 
       {/* Main Logo */}
       <img src={logo} alt="Fitness Finder Logo" className="logo" />

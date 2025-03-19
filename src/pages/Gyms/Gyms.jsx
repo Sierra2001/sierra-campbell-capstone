@@ -1,6 +1,7 @@
 import "./Gyms.scss";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const containerStyle = {
   width: "350px",
@@ -11,6 +12,7 @@ const containerStyle = {
   top: "70%",
   left: "50%",
   transform: "translate(-50%, -50%)",
+  marginTop: "50px",
 };
 
 const DEFAULT_LOCATION = { lat: 43.7, lng: -79.42 };
@@ -90,7 +92,6 @@ function Gyms() {
     }
   };
 
-  // Use effect to fetch location on component mount
   useEffect(() => {
     getLocationFromAPI();
   }, []);
@@ -104,28 +105,35 @@ function Gyms() {
 
       <div className="gyms-header">
         <h2>See gyms near you</h2>
+        <Link to="/find-workout" className="button find-workout">
+          Find Workouts
+        </Link>
       </div>
 
-      <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={14}>
-        {/* User's location marker */}
-        <Marker position={location} label="You" />
-
-        {/* Nearby gyms markers */}
-        {loadingGyms ? (
-          <p>Loading gyms...</p>
-        ) : (
-          gyms.map((gym) => (
-            <Marker
-              key={gym.place_id}
-              position={{
-                lat: gym.geometry.location.lat(),
-                lng: gym.geometry.location.lng(),
-              }}
-              title={gym.name}
-            />
-          ))
-        )}
-      </GoogleMap>
+      {/* Added wrapper for map */}
+      <div className="map-wrapper">
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={location}
+          zoom={14}
+        >
+          <Marker position={location} label="You" />
+          {loadingGyms ? (
+            <p>Loading gyms...</p>
+          ) : (
+            gyms.map((gym) => (
+              <Marker
+                key={gym.place_id}
+                position={{
+                  lat: gym.geometry.location.lat(),
+                  lng: gym.geometry.location.lng(),
+                }}
+                title={gym.name}
+              />
+            ))
+          )}
+        </GoogleMap>
+      </div>
     </div>
   );
 }

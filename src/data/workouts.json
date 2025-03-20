@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Push-Up",
+    "type": "Strength",
+    "description": "A basic push-up routine.",
+    "image": "pushup.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Deadlift",
+    "type": "Strength",
+    "description": "A challenging deadlift workout targeting your back and legs.",
+    "image": "deadlift.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Squats",
+    "type": "Strength",
+    "description": "A leg workout focusing on squats to build strength.",
+    "image": "squats.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pull-Ups",
+    "type": "Strength",
+    "description": "An upper-body workout focusing on pull-ups to strengthen your back.",
+    "image": "pullup.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chest Press",
+    "type": "Strength",
+    "description": "A chest workout that focuses on the bench press for upper body strength.",
+    "image": "chestpress.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dumbbell Rows",
+    "type": "Strength",
+    "description": "A workout for your upper back, arms, and shoulders.",
+    "image": "dummbellrow.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lunges",
+    "type": "Strength",
+    "description": "A lower-body workout that focuses on leg strength.",
+    "image": "lunges.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Bicep Curls",
+    "type": "Strength",
+    "description": "A classic bicep workout to build arm strength.",
+    "image": "bicepcurl.jpg"
+  },
+
+  {
+    "id": 9,
+    "name": "Running",
+    "type": "Cardio",
+    "description": "A quick cardio routine for beginners or experienced runners.",
+    "imageUrl": ""
+  },
+  {
+    "id": 10,
+    "name": "HIIT Sprint",
+    "type": "Cardio",
+    "description": "A high-intensity interval training sprint routine for fat loss.",
+    "imageUrl": ""
+  },
+  {
+    "id": 11,
+    "name": "Jump Rope",
+    "type": "Cardio",
+    "description": "A full-body cardio workout with jump rope.",
+    "imageUrl": ""
+  },
+  {
+    "id": 12,
+    "name": "Cycling",
+    "type": "Cardio",
+    "description": "An indoor cycling workout to improve stamina and endurance.",
+    "imageUrl": ""
+  },
+  {
+    "id": 13,
+    "name": "Swimming",
+    "type": "Cardio",
+    "description": "A total body workout thats easy on your joints.",
+    "imageUrl": ""
+  },
+  {
+    "id": 14,
+    "name": "Stair Climber",
+    "type": "Cardio",
+    "description": "A great cardio workout using the stair climber machine.",
+    "imageUrl": ""
+  },
+  {
+    "id": 15,
+    "name": "Boxing",
+    "type": "Cardio",
+    "description": "A cardio workout combining punching with footwork for a full-body workout.",
+    "imageUrl": ""
+  },
+  {
+    "id": 16,
+    "name": "Rowing",
+    "type": "Cardio",
+    "description": "A low-impact cardio workout using a rowing machine.",
+    "imageUrl": ""
+  },
+
+  {
+    "id": 17,
+    "name": "Yoga Flow",
+    "type": "Flexibility",
+    "description": "A relaxing yoga flow for flexibility and balance.",
+    "imageUrl": ""
+  },
+  {
+    "id": 18,
+    "name": "Hamstring Stretch",
+    "type": "Flexibility",
+    "description": "A stretch for your hamstrings to improve flexibility.",
+    "imageUrl": ""
+  },
+  {
+    "id": 19,
+    "name": "Cat-Cow Pose",
+    "type": "Flexibility",
+    "description": "A yoga pose that stretches your back and shoulders.",
+    "imageUrl": ""
+  },
+  {
+    "id": 20,
+    "name": "Quad Stretch",
+    "type": "Flexibility",
+    "description": "A stretch for your quadriceps to increase flexibility in your legs.",
+    "imageUrl": ""
+  },
+  {
+    "id": 21,
+    "name": "Cobra Pose",
+    "type": "Flexibility",
+    "description": "A yoga pose that stretches the chest and spine.",
+    "imageUrl": ""
+  },
+  {
+    "id": 22,
+    "name": "Butterfly Stretch",
+    "type": "Flexibility",
+    "description": "A seated stretch that improves flexibility in your hips and legs.",
+    "imageUrl": ""
+  },
+  {
+    "id": 23,
+    "name": "Seated Forward Fold",
+    "type": "Flexibility",
+    "description": "A yoga stretch that targets the hamstrings and lower back.",
+    "imageUrl": ""
+  },
+  {
+    "id": 24,
+    "name": "Child's Pose",
+    "type": "Flexibility",
+    "description": "A restful yoga pose that stretches the back and hips.",
+    "imageUrl": ""
+  }
+]

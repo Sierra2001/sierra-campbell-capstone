@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import Workouts from "../../data/workouts.json";
 import "./Cardio.scss";
 
@@ -7,12 +7,16 @@ import "./Cardio.scss";
 const images = import.meta.glob("../../assets/images/*", { eager: true });
 
 const Cardio = () => {
+  const navigate = useNavigate(); // Initialize navigate function
   const cardioWorkouts = Workouts.filter(
     (workout) => workout.type === "Cardio"
   );
 
   return (
     <div>
+      <button className="back-button" onClick={() => navigate("/find-workout")}>
+        ← Back to Find a Workout
+      </button>
       <div className="workout-grid">
         {cardioWorkouts.map((workout) => {
           const imageSrc =

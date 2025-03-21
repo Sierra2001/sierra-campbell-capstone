@@ -4,169 +4,175 @@
     "name": "Push-Up",
     "type": "Strength",
     "description": "A basic push-up routine.",
-    "image": "pushup.jpg"
+    "image": "pushup.jpg",
+    "instructions": "Do 10 reps, 3 sets. Keep your body in a straight line, engage your core, and lower your chest to just above the ground before pushing back up."
   },
   {
     "id": 2,
     "name": "Deadlift",
     "type": "Strength",
     "description": "A challenging deadlift workout targeting your back and legs.",
-    "image": "deadlift.jpg"
+    "image": "deadlift.jpg",
+    "instructions": "Perform 5 reps, 4 sets. Keep your back straight, hinge at your hips, and lift the weight by driving through your heels."
   },
   {
     "id": 3,
     "name": "Squats",
     "type": "Strength",
     "description": "A leg workout focusing on squats to build strength.",
-    "image": "squats.jpg"
+    "image": "squats.jpg",
+    "instructions": "Do 12 reps, 3 sets. Lower your hips until your thighs are parallel to the ground, keep your knees aligned with your toes, and push back up."
   },
   {
     "id": 4,
     "name": "Pull-Ups",
     "type": "Strength",
     "description": "An upper-body workout focusing on pull-ups to strengthen your back.",
-    "image": "pullup.jpg"
+    "image": "pullup.jpg",
+    "instructions": "Perform 8 reps, 4 sets. Grip the bar shoulder-width apart, engage your lats, and pull your chin above the bar before lowering back down with control."
   },
   {
     "id": 5,
     "name": "Chest Press",
     "type": "Strength",
     "description": "A chest workout that focuses on the bench press for upper body strength.",
-    "image": "chestpress.jpg"
+    "image": "chestpress.jpg",
+    "instructions": "Do 10 reps, 3 sets. Lower the weight slowly to your chest, keep your elbows at a 45-degree angle, and push up explosively."
   },
   {
     "id": 6,
     "name": "Dumbbell Rows",
     "type": "Strength",
     "description": "A workout for your upper back, arms, and shoulders.",
-    "image": "dummbellrow.jpg"
+    "image": "dummbellrow.jpg",
+    "instructions": "Do 10 reps, 3 sets per arm. Keep your back straight, pull the dumbbell towards your torso, and squeeze your shoulder blades at the top."
   },
   {
     "id": 7,
     "name": "Lunges",
     "type": "Strength",
     "description": "A lower-body workout that focuses on leg strength.",
-    "image": "lunges.jpg"
+    "image": "lunges.jpg",
+    "instructions": "Perform 12 reps, 3 sets per leg. Step forward, lower your back knee towards the ground, and push through your front heel to return."
   },
   {
     "id": 8,
     "name": "Bicep Curls",
     "type": "Strength",
     "description": "A classic bicep workout to build arm strength.",
-    "image": "bicepcurl.jpg"
+    "image": "bicepcurl.jpg",
+    "instructions": "Do 12 reps, 3 sets. Keep your elbows close to your torso, curl the weights up while squeezing your biceps, and lower slowly."
   },
-
   {
     "id": 9,
     "name": "Running",
     "type": "Cardio",
     "description": "A quick cardio routine for beginners or experienced runners.",
-    "imageUrl": ""
+    "instructions": "Run for 20 minutes at a moderate pace. Maintain an upright posture, relax your shoulders, and control your breathing."
   },
   {
     "id": 10,
     "name": "HIIT Sprint",
     "type": "Cardio",
     "description": "A high-intensity interval training sprint routine for fat loss.",
-    "imageUrl": ""
+    "instructions": "Perform 30-second sprints followed by 1-minute rest, for 10 rounds. Drive with your knees, pump your arms, and go all out on sprints."
   },
   {
     "id": 11,
     "name": "Jump Rope",
     "type": "Cardio",
     "description": "A full-body cardio workout with jump rope.",
-    "imageUrl": ""
+    "instructions": "Jump rope for 2 minutes, rest for 30 seconds, repeat 5 times. Stay on the balls of your feet and keep your core engaged."
   },
   {
     "id": 12,
     "name": "Cycling",
     "type": "Cardio",
     "description": "An indoor cycling workout to improve stamina and endurance.",
-    "imageUrl": ""
+    "instructions": "Cycle for 30 minutes at a steady pace. Keep your cadence smooth and adjust resistance as needed."
   },
   {
     "id": 13,
     "name": "Swimming",
     "type": "Cardio",
-    "description": "A total body workout thats easy on your joints.",
-    "imageUrl": ""
+    "description": "A total body workout that's easy on your joints.",
+    "instructions": "Swim for 20 minutes, alternating strokes. Focus on smooth strokes and controlled breathing."
   },
   {
     "id": 14,
     "name": "Stair Climber",
     "type": "Cardio",
     "description": "A great cardio workout using the stair climber machine.",
-    "imageUrl": ""
+    "instructions": "Climb for 20 minutes, maintaining a steady pace. Keep your back straight and avoid leaning on the handles."
   },
   {
     "id": 15,
     "name": "Boxing",
     "type": "Cardio",
     "description": "A cardio workout combining punching with footwork for a full-body workout.",
-    "imageUrl": ""
+    "instructions": "Box for 3 minutes, rest for 1 minute, repeat for 5 rounds. Keep your hands up, move your feet, and throw controlled punches."
   },
   {
     "id": 16,
     "name": "Rowing",
     "type": "Cardio",
     "description": "A low-impact cardio workout using a rowing machine.",
-    "imageUrl": ""
+    "instructions": "Row for 20 minutes at a steady pace. Push with your legs, lean back slightly, and pull the handle towards your chest."
   },
-
   {
     "id": 17,
     "name": "Yoga Flow",
     "type": "Flexibility",
     "description": "A relaxing yoga flow for flexibility and balance.",
-    "imageUrl": ""
+    "instructions": "Hold each pose for 30 seconds, flow through for 20 minutes. Breathe deeply and move smoothly between poses."
   },
   {
     "id": 18,
     "name": "Hamstring Stretch",
     "type": "Flexibility",
     "description": "A stretch for your hamstrings to improve flexibility.",
-    "imageUrl": ""
+    "instructions": "Hold for 30 seconds per leg. Keep your back straight and lean forward gently."
   },
   {
     "id": 19,
     "name": "Cat-Cow Pose",
     "type": "Flexibility",
     "description": "A yoga pose that stretches your back and shoulders.",
-    "imageUrl": ""
+    "instructions": "Flow between Cat and Cow for 1 minute. Move slowly, inhale when arching, exhale when rounding your back."
   },
   {
     "id": 20,
     "name": "Quad Stretch",
     "type": "Flexibility",
     "description": "A stretch for your quadriceps to increase flexibility in your legs.",
-    "imageUrl": ""
+    "instructions": "Hold for 30 seconds per leg. Keep your knees close and balance by holding onto a wall if needed."
   },
   {
     "id": 21,
     "name": "Cobra Pose",
     "type": "Flexibility",
     "description": "A yoga pose that stretches the chest and spine.",
-    "imageUrl": ""
+    "instructions": "Hold for 30 seconds. Keep your shoulders relaxed and press your chest forward."
   },
   {
     "id": 22,
     "name": "Butterfly Stretch",
     "type": "Flexibility",
     "description": "A seated stretch that improves flexibility in your hips and legs.",
-    "imageUrl": ""
+    "instructions": "Hold for 30 seconds. Keep your feet together and gently press your knees toward the floor."
   },
   {
     "id": 23,
     "name": "Seated Forward Fold",
     "type": "Flexibility",
     "description": "A yoga stretch that targets the hamstrings and lower back.",
-    "imageUrl": ""
+    "instructions": "Hold for 30 seconds. Keep your back straight and reach towards your feet."
   },
   {
     "id": 24,
     "name": "Child's Pose",
     "type": "Flexibility",
     "description": "A restful yoga pose that stretches the back and hips.",
-    "imageUrl": ""
+    "instructions": "Hold for 1 minute. Relax your arms and let your forehead rest on the mat."
   }
 ]

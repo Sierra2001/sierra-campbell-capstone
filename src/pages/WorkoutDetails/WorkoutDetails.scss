@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.workout-details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+
+.workout-details__header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px 20px 20px;
+}
+
+.workout-details__title {
+  font-size: 2rem;
+  color: rgba(225, 49, 49, 0.5);
+  margin-bottom: 10px;
+}
+
+.workout-details__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.workout-details__description,
+.workout-details__instructions-title,
+.workout-details__instructions {
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.workout-details__instructions-title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.button {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.button.strength {
+  background-color: rgba(225, 49, 49, 0.5);
+}
+
+.button.cardio {
+  background-color: rgba(190, 60, 60, 0.5);
+}
+
+.button.flexibility {
+  background-color: rgba(209, 133, 133, 0.5);
+}

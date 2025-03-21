@@ -132,6 +132,7 @@
     "name": "Yoga Flow",
     "type": "Flexibility",
     "description": "A relaxing yoga flow for flexibility and balance.",
+    "image": "yogaflow.jpg",
     "instructions": "Hold each pose for 30 seconds, flow through for 20 minutes. Breathe deeply and move smoothly between poses."
   },
   {
@@ -139,6 +140,7 @@
     "name": "Hamstring Stretch",
     "type": "Flexibility",
     "description": "A stretch for your hamstrings to improve flexibility.",
+    "image": "hamstring.jpg",
     "instructions": "Hold for 30 seconds per leg. Keep your back straight and lean forward gently."
   },
   {
@@ -146,6 +148,7 @@
     "name": "Cat-Cow Pose",
     "type": "Flexibility",
     "description": "A yoga pose that stretches your back and shoulders.",
+    "image": "catcow.jpg",
     "instructions": "Flow between Cat and Cow for 1 minute. Move slowly, inhale when arching, exhale when rounding your back."
   },
   {
@@ -153,6 +156,7 @@
     "name": "Quad Stretch",
     "type": "Flexibility",
     "description": "A stretch for your quadriceps to increase flexibility in your legs.",
+    "image": "quad.jpg",
     "instructions": "Hold for 30 seconds per leg. Keep your knees close and balance by holding onto a wall if needed."
   },
   {
@@ -160,20 +164,23 @@
     "name": "Cobra Pose",
     "type": "Flexibility",
     "description": "A yoga pose that stretches the chest and spine.",
+    "image": "cobra.jpg",
     "instructions": "Hold for 30 seconds. Keep your shoulders relaxed and press your chest forward."
   },
   {
     "id": 22,
-    "name": "Butterfly Stretch",
+    "name": "Downward Dog",
     "type": "Flexibility",
-    "description": "A seated stretch that improves flexibility in your hips and legs.",
-    "instructions": "Hold for 30 seconds. Keep your feet together and gently press your knees toward the floor."
+    "description": "A stretch that improves flexibility in your hips and legs.",
+    "image": "downwarddog.jpg",
+    "instructions": "Hold for 30 seconds. Keep your feet together and gently press your body up."
   },
   {
     "id": 23,
     "name": "Seated Forward Fold",
     "type": "Flexibility",
     "description": "A yoga stretch that targets the hamstrings and lower back.",
+    "image": "forwardfold.jpg",
     "instructions": "Hold for 30 seconds. Keep your back straight and reach towards your feet."
   },
   {
@@ -181,6 +188,7 @@
     "name": "Child's Pose",
     "type": "Flexibility",
     "description": "A restful yoga pose that stretches the back and hips.",
+    "image": "childspose.jpg",
     "instructions": "Hold for 1 minute. Relax your arms and let your forehead rest on the mat."
   }
 ]

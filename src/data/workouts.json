@@ -68,6 +68,7 @@
     "name": "Running",
     "type": "Cardio",
     "description": "A quick cardio routine for beginners or experienced runners.",
+    "image": "running.jpg",
     "instructions": "Run for 20 minutes at a moderate pace. Maintain an upright posture, relax your shoulders, and control your breathing."
   },
   {
@@ -75,6 +76,7 @@
     "name": "HIIT Sprint",
     "type": "Cardio",
     "description": "A high-intensity interval training sprint routine for fat loss.",
+    "image": "sprint.jpg",
     "instructions": "Perform 30-second sprints followed by 1-minute rest, for 10 rounds. Drive with your knees, pump your arms, and go all out on sprints."
   },
   {
@@ -82,6 +84,7 @@
     "name": "Jump Rope",
     "type": "Cardio",
     "description": "A full-body cardio workout with jump rope.",
+    "image": "jumprope.jpg",
     "instructions": "Jump rope for 2 minutes, rest for 30 seconds, repeat 5 times. Stay on the balls of your feet and keep your core engaged."
   },
   {
@@ -89,6 +92,7 @@
     "name": "Cycling",
     "type": "Cardio",
     "description": "An indoor cycling workout to improve stamina and endurance.",
+    "image": "cycling.jpg",
     "instructions": "Cycle for 30 minutes at a steady pace. Keep your cadence smooth and adjust resistance as needed."
   },
   {
@@ -96,6 +100,7 @@
     "name": "Swimming",
     "type": "Cardio",
     "description": "A total body workout that's easy on your joints.",
+    "image": "swimming.jpg",
     "instructions": "Swim for 20 minutes, alternating strokes. Focus on smooth strokes and controlled breathing."
   },
   {
@@ -103,6 +108,7 @@
     "name": "Stair Climber",
     "type": "Cardio",
     "description": "A great cardio workout using the stair climber machine.",
+    "image": "stairclimber.jpg",
     "instructions": "Climb for 20 minutes, maintaining a steady pace. Keep your back straight and avoid leaning on the handles."
   },
   {
@@ -110,6 +116,7 @@
     "name": "Boxing",
     "type": "Cardio",
     "description": "A cardio workout combining punching with footwork for a full-body workout.",
+    "image": "boxing.jpg",
     "instructions": "Box for 3 minutes, rest for 1 minute, repeat for 5 rounds. Keep your hands up, move your feet, and throw controlled punches."
   },
   {
@@ -117,6 +124,7 @@
     "name": "Rowing",
     "type": "Cardio",
     "description": "A low-impact cardio workout using a rowing machine.",
+    "image": "rowing.jpg",
     "instructions": "Row for 20 minutes at a steady pace. Push with your legs, lean back slightly, and pull the handle towards your chest."
   },
   {

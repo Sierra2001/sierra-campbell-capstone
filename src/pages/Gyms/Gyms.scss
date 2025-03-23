@@ -1,3 +1,75 @@
 body {
   background-color: black;
 }
+.gm-style-mtc {
+  background: rgba(131, 37, 37, 0.3) !important;
+  padding: 6px 12px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+  font-size: 18px !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.gm-style-mtc div {
+  color: rgba(131, 37, 37, 0.3) !important;
+  font-weight: bold !important;
+}
+
+.gm-style-mtc:hover {
+  background: rgba(131, 37, 37, 0.3) !important;
+}
+
+.gm-style-mtc {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+/* Google Maps Buttons */
+.gm-style-mtc button {
+  background: white !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 8px 12px !important;
+  text-transform: none !important;
+  appearance: none !important;
+  position: relative !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  overflow: hidden !important;
+  text-align: center !important;
+  height: 45px !important;
+  vertical-align: middle !important;
+  color: rgb(86, 86, 86) !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 18px !important;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px !important;
+  min-width: 70px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* Hover effect */
+.gm-style-mtc button:hover {
+  background: rgb(131, 37, 37) !important;
+  color: white !important;
+  transform: scale(1.05) !important;
+}
+
+.gyms-header {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}

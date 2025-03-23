@@ -1,0 +1,54 @@
+.workouts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 1.5rem; /* Smaller padding for smaller buttons */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  display: inline-block;
+
+  &:hover {
+    background: rgba(131, 37, 37, 0.3);
+    border-color: rgb(131, 37, 37);
+  }
+
+  &.strength {
+    background-color: rgba(225, 49, 49, 0.5); /* More transparent */
+  }
+
+  &.cardio {
+    background-color: rgba(190, 60, 60, 0.5); /* More transparent */
+  }
+
+  &.flexibility {
+    background-color: rgba(209, 133, 133, 0.5); /* More transparent */
+  }
+}

@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins" as *;
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .header {
@@ -32,15 +33,21 @@
     position: absolute;
     top: 120%;
     left: 0;
+    height: 20vh;
     width: 100%;
-    background: rgba(30, 30, 30, 0.7);
+    background: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
     z-index: 10;
     gap: 1rem;
+
+    @include desktop {
+      width: 100%;
+      gap: 5rem;
+      background: none;
+    }
   }
 
   .dropdown-link {

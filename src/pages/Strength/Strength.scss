@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.workout-card {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(131, 37, 37, 0.3);
+    border-color: rgb(131, 37, 37);
+  }
+
+  &.strength {
+    background-color: rgba(225, 49, 49, 0.5);
+  }
+
+  &.cardio {
+    background-color: rgba(190, 60, 60, 0.5);
+  }
+
+  &.flexibility {
+    background-color: rgba(209, 133, 133, 0.5);
+  }
+}
+
+.workout-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.workout-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.workout-card p {
+  font-size: 1.2rem;
+  color: white;
+}

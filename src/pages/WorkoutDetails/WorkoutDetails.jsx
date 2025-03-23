@@ -1,49 +1,78 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import Workouts from "../../data/workouts.json";
 import "./WorkoutDetails.scss";
 
+// Dynamically import images
 const images = import.meta.glob("../../assets/images/*", { eager: true });
 
 const WorkoutDetails = () => {
   const { id } = useParams();
-  const workout = Workouts.find((w) => w.id.toString() === id);
-
-  const [comment, setComment] = useState("");
-  const [name, setName] = useState("");
+  const [workout, setWorkout] = useState(null);
   const [comments, setComments] = useState([]);
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+
+  // Fetch workout details and comments
+  useEffect(() => {
+    const fetchWorkout = async () => {
+      try {
+        const response = await fetch(`http://localhost:8080/workouts/${id}`);
+        const data = await response.json();
+        setWorkout(data);
+        setComments(data.comments || []);
+      } catch (error) {
+        console.error("Error fetching workout:", error);
+      }
+    };
+    fetchWorkout();
+  }, [id]);
+
+  // Submit a new comment
+  const handleCommentSubmit = async (e) => {
+    e.preventDefault();
+    if (!name || !comment) return;
+
+    try {
+      const response = await fetch(
+        `http://localhost:8080/workouts/${id}/comments`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, comment }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to post comment");
+      }
+
+      const updatedWorkout = await response.json();
+      setComments(updatedWorkout.comments); // Update comments list
+      setName("");
+      setComment("");
+    } catch (error) {
+      console.error("Error posting comment:", error);
+    }
+  };
 
   if (!workout) {
-    return <h2>Workout not found!</h2>;
+    return <h2>Loading...</h2>;
   }
 
+  // Dynamically load the image based on the workout image name
   const imageSrc =
-    images[`../../assets/images/${workout.image}`]?.default || "";
-
-  const workoutTypeLink = `/${workout.type.toLowerCase()}`;
-
-  const handleCommentSubmit = (e) => {
-    e.preventDefault();
-    const timestamp = new Date().toLocaleString();
-    const newComment = {
-      id: comments.length + 1,
-      name: name,
-      timestamp: timestamp,
-      comment: comment,
-    };
-    setComments([...comments, newComment]);
-    setComment("");
-    setName("");
-  };
+    images[`../../assets/images/${workout.image}`]?.default ||
+    "/assets/images/default.jpg"; // Fallback image
 
   return (
     <div className="workout-details">
       <div className="workout-details__header">
         <h1 className="workout-details__title">{workout.name}</h1>
-        <Link to={workoutTypeLink} className="button">
+        <Link to={`/${workout.type.toLowerCase()}`} className="button">
           Back to {workout.type} Workouts
         </Link>
       </div>
+
       <img
         className="workout-details__image"
         src={imageSrc}
@@ -52,6 +81,7 @@ const WorkoutDetails = () => {
       <p className="workout-details__description">{workout.description}</p>
       <h3 className="workout-details__instructions-title">How to do it:</h3>
       <p className="workout-details__instructions">{workout.instructions}</p>
+
       {/* Comment Form */}
       <div className="comment-form">
         <h3>Post a Comment</h3>
@@ -83,6 +113,7 @@ const WorkoutDetails = () => {
         </form>
       </div>
 
+      {/* Comments Section */}
       <div className="comments-section">
         <h3>Comments</h3>
         {comments.length > 0 ? (
@@ -90,7 +121,9 @@ const WorkoutDetails = () => {
             <div key={commentData.id} className="comment">
               <p className="comment__header">
                 <strong>{commentData.name}</strong>{" "}
-                <span className="timestamp">{commentData.timestamp}</span>
+                <span className="timestamp">
+                  {new Date(commentData.timestamp).toLocaleString()}
+                </span>
               </p>
               <p>{commentData.comment}</p>
             </div>
